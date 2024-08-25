@@ -17,8 +17,8 @@ jobs:
 
       - name: compile-project
         shell: powershell
-        run: C:\Users\helve\Documents\Embarcadero\Studio\Projects\calculadora\compilador.bat
+        run: .\compilador.bat
 
       - name: execute-test
         shell: powershell
-        run: C:\Users\helve\Documents\Embarcadero\Studio\Projects\calculadora\Test\Win32\Debug\PrjCalculadoraTests.exe
+        run: .\Test\Win32\Debug\PrjCalculadoraTests.exe
