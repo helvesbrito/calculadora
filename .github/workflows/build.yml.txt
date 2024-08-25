@@ -20,4 +20,4 @@ jobs:
 
       - name: execute-test
         shell: powershell
-        run: .\bin\CalculadoraTests.exe
+        run: .\bin\PrjCalculadoraTests.exe
