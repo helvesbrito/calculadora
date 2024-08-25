@@ -17,6 +17,7 @@ jobs:
 
       - name: compile-project
         shell: powershell
+        run: Unblock-File -Path .\compilador.bat
         run: .\compilador.bat
 
       - name: execute-test
