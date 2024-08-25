@@ -9,6 +9,9 @@
         <Projects Include="Test\PrjCalculadoraTests.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="TestConsole\PrjCalculadoraTestsConsole.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="PrjCalculadoraTests:Make">
         <MSBuild Projects="Test\PrjCalculadoraTests.dproj" Targets="Make"/>
     </Target>
+    <Target Name="PrjCalculadoraTestsConsole">
+        <MSBuild Projects="TestConsole\PrjCalculadoraTestsConsole.dproj"/>
+    </Target>
+    <Target Name="PrjCalculadoraTestsConsole:Clean">
+        <MSBuild Projects="TestConsole\PrjCalculadoraTestsConsole.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PrjCalculadoraTestsConsole:Make">
+        <MSBuild Projects="TestConsole\PrjCalculadoraTestsConsole.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="PrjCalculadora;PrjCalculadoraTests"/>
+        <CallTarget Targets="PrjCalculadora;PrjCalculadoraTests;PrjCalculadoraTestsConsole"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="PrjCalculadora:Clean;PrjCalculadoraTests:Clean"/>
+        <CallTarget Targets="PrjCalculadora:Clean;PrjCalculadoraTests:Clean;PrjCalculadoraTestsConsole:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="PrjCalculadora:Make;PrjCalculadoraTests:Make"/>
+        <CallTarget Targets="PrjCalculadora:Make;PrjCalculadoraTests:Make;PrjCalculadoraTestsConsole:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

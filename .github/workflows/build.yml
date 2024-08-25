@@ -21,4 +21,4 @@ jobs:
 
       - name: execute-test
         shell: powershell
-        run: .\Test\Win32\Debug\PrjCalculadoraTests.exe
+        run: .\TestConsole\Win32\Debug\PrjCalculadoraTestsConsole.exe
