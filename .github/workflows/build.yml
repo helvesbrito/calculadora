@@ -21,4 +21,4 @@ jobs:
 
       - name: execute-test
         shell: powershell
-        run: .\TestConsole\Win32\Debug\PrjCalculadoraTestsConsole.exe
+        run: C:\Users\helve\Documents\Embarcadero\Studio\Projects\calculadora\TestConsole\Win32\Debug\PrjCalculadoraTestsConsole.exe
