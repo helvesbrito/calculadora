@@ -78,7 +78,7 @@ begin
   Anumero1 := 3;
   Anumero2 := 3;
   ReturnValue := FFrmCalculadora.Multiplicar(ANumero1, Anumero2);
-  CheckEquals(6,ReturnValue,'O teste da Multiplicar falhou');
+  CheckEquals(9,ReturnValue,'O teste da Multiplicar falhou');
 end;
 
 procedure TestTFrmCalculadora.TestDividir;
