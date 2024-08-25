@@ -54,7 +54,7 @@ begin
   Anumero1 := 3;
   Anumero2 := 3;
   ReturnValue := FFrmCalculadora.Somar(ANumero1, Anumero2);
-  CheckEquals(10,ReturnValue,'O teste da soma falhou');
+  CheckEquals(6,ReturnValue,'O teste da soma falhou');
 end;
 
 procedure TestTFrmCalculadora.TestSubtrair;
