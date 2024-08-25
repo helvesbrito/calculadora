@@ -61,7 +61,7 @@ end;
 
 function TFrmCalculadora.Dividir(ANumero1, Anumero2: Integer): Integer;
 begin
-  Result:= ANumero1 div ANumero2 + 1;
+  Result:= ANumero1 div ANumero2;
 end;
 
 procedure TFrmCalculadora.FormCreate(Sender: TObject);
