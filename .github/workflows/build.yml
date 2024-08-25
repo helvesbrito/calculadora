@@ -16,7 +16,7 @@ jobs:
 
       - name: compile-project
         shell: powershell
-        run: .\compilador.bat
+        run: C:\Users\helve\Documents\Embarcadero\Studio\Projects\calculadora\compilador.bat
 
       - name: execute-test
         shell: powershell
