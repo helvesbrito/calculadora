@@ -66,7 +66,7 @@ begin
   Anumero1 := 3;
   Anumero2 := 3;
   ReturnValue := FFrmCalculadora.Subtrair(ANumero1, Anumero2);
-  CheckEquals(2,ReturnValue,'O teste da Subtrair falhou');
+  CheckEquals(5,ReturnValue,'O teste da Subtrair falhou');
 end;
 
 procedure TestTFrmCalculadora.TestMultiplicar;
